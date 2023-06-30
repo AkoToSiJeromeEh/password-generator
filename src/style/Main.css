@@ -1,0 +1,133 @@
+.button-container {
+  position: fixed;
+  bottom: 50%;
+  right: 0px;
+  height: 5vh;
+  text-align: center;
+}
+.button-container > button {
+  width: 50px;
+  height: 150px;
+  font-size: 20px;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+.dark {
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+.light {
+  background-color: rgb(231, 234, 237);
+  color: black;
+}
+.dark-btn {
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0px 3px 10px rgb(100, 0, 139);
+  color: lightblue;
+}
+.light-btn {
+  background-color: aliceblue;
+  color: rgb(198, 179, 7);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.732);
+}
+.dark-btn:active,
+.light-btn:active {
+  box-shadow: none;
+}
+.dark-btn:hover,
+.light-btn:hover {
+  background-color: transparent;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+.item-1 {
+  align-self: flex-start;
+  margin: 8rem 0px 0px 15px;
+}
+.item-1 > h1 {
+  font-family: Montserrat;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 45px;
+}
+.item-1 > p {
+  margin-top: 5px;
+  font-family: Montserrat;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.h1-span {
+  color: rgb(140, 0, 175);
+  font-weight: 800;
+}
+.item-2 {
+  align-self: flex-start;
+  margin: 20px 0px 0px 15px;
+}
+hr {
+  border-color: grey;
+  border-width: 1px;
+  margin-right: 50%;
+  width: 50%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.item-2 > button {
+  width: 250px;
+  height: 40px;
+  font-family: Montserrat;
+  font-size: 17px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.item-2 > button:hover {
+  opacity: 0.8;
+}
+.item-2 > button:active {
+  opacity: 0.8;
+}
+.btn-gen-light {
+  color: rgb(0, 0, 0);
+  background-color: rgb(226, 164, 252);
+}
+.item-2 > .btn-gen-dark {
+  background-color: rgb(106, 8, 131);
+  color: rgb(255, 255, 255);
+}
+.pass-container {
+  margin-bottom: 50px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: Montserrat;
+  border: 1px solid rgb(106, 8, 131);
+  padding: 10px;
+}
+@media (max-width:700px) {
+    .item-1 > h1{
+        font-size: 22px;
+    }
+    .item-1 > p {
+        font-size: 13px;
+    }
+    .item-2 > button{
+        width: 200px;
+        font-size: 14px;
+    }
+    .pass-container{
+        font-size: 16px;
+    }
+    hr{
+      width: 100%;
+      margin-right: 5%;
+      margin-left: 5%;
+    }
+}
